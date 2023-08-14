@@ -33,8 +33,7 @@
 
 .about-part-icons-container {
   @include flex-center-center;
-  justify-content: space-between;
-
+  gap:6rem;
   @media (max-width: 900px) {
     justify-content: center;
     gap: 1rem;
