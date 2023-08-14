@@ -1,0 +1,32 @@
+.services-card {
+  @include card-primary;
+  padding: 2rem;
+  width: 22rem;
+  height: 30rem;
+  @include flex-center-center;
+  flex-direction: column;
+
+  @media (max-width: 1200px) {
+    width: 70%;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-20px);
+  }
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  img {
+    height: 23%;
+    margin-top: 6rem;
+  }
+  p {
+    height: 30%;
+  }
+}

@@ -1,0 +1,26 @@
+footer {
+  background-color: black;
+  padding: 2.5rem 20rem;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    padding: 3rem 10rem;
+  }
+
+  @media (max-width: 750px) {
+    padding: 3rem 3rem;
+  }
+
+  p,
+  a {
+    font-size: 1.4rem;
+    color: $color-white;
+
+    @media (max-width: 750px) {
+      font-size: 1.2rem;
+    }
+  }
+}

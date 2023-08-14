@@ -1,0 +1,49 @@
+.about {
+  margin: 0 auto;
+  text-align: center;
+  background-color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media (max-width: 1000px) {
+    padding: 5rem 1rem;
+  }
+
+  &-part {
+    h2 {
+      margin-bottom: 2.2rem;
+    }
+
+    p {
+      color: #31436d;
+      padding: 0 5rem;
+      font-size: 2.4rem;
+      line-height: 4.4rem;
+      font-weight: 600;
+
+      @media (max-width: 900px) {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.about-part-icons-container {
+  @include flex-center-center;
+  justify-content: space-between;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    gap: 1rem;
+  }
+  &-icon {
+    width: 6rem;
+
+    @media (max-width: 1000px) {
+      width: 5rem;
+    }
+  }
+}
